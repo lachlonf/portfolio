@@ -59,18 +59,7 @@ export default function About() {
         >
           {/* Portrait — below canvas so you can draw over it */}
           <div style={{ ...styles.portrait, maxWidth: isMobile ? 280 : "none", maxHeight: "62vh", margin: isMobile ? "0 auto" : "0", position: "relative", zIndex: 0 }}>
-            <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
-              <defs>
-                <pattern id="ap" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                  <rect width="14" height="14" fill="#f4f4f4" />
-                  <line x1="0" y1="0" x2="0" y2="14" stroke="#ececec" strokeWidth="7" />
-                </pattern>
-              </defs>
-              <rect width="400" height="500" fill="url(#ap)" />
-              <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle"
-                fontFamily="ui-monospace, Menlo, monospace" fontSize="13" fill="#9a9a9a"
-                letterSpacing="2">[ portrait ]</text>
-            </svg>
+            <img src="/FDC65D7C-9794-4725-A71D-BFFE860BD0BD.JPG" alt="Lachlon Felizardo" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
           </div>
 
           {/* Copy — pointer events none so drawing passes through */}
