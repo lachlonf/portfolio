@@ -59,7 +59,7 @@ export default function About() {
         >
           {/* Portrait — below canvas so you can draw over it */}
           <div style={{ ...styles.portrait, maxWidth: isMobile ? 280 : "none", maxHeight: "62vh", margin: isMobile ? "0 auto" : "0", position: "relative", zIndex: 0 }}>
-            <img src="/FDC65D7C-9794-4725-A71D-BFFE860BD0BD.JPG" alt="Lachlon Felizardo" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "70% center", display: "block" }} />
+            <img src="/FDC65D7C-9794-4725-A71D-BFFE860BD0BD.JPG" alt="Lachlon Felizardo" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "60% center", display: "block" }} />
           </div>
 
           {/* Copy — pointer events none so drawing passes through */}
