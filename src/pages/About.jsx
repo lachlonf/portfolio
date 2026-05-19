@@ -58,7 +58,7 @@ export default function About() {
           transition={{ duration: 0.22 }}
         >
           {/* Portrait — below canvas so you can draw over it */}
-          <div style={{ ...styles.portrait, maxWidth: isMobile ? 280 : "none", margin: isMobile ? "0 auto" : "0", position: "relative", zIndex: 0 }}>
+          <div style={{ ...styles.portrait, maxWidth: isMobile ? 280 : "none", maxHeight: "62vh", margin: isMobile ? "0 auto" : "0", position: "relative", zIndex: 0 }}>
             <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
               <defs>
                 <pattern id="ap" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
