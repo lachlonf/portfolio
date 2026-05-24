@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import SiteHeader from "./components/SiteHeader";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -9,6 +10,7 @@ export default function App() {
   const isMobile = useIsMobile();
   return (
     <>
+      <Analytics />
       <SiteHeader />
       <main style={{ ...styles.main, padding: isMobile ? "24px 16px 100px" : "40px 40px 120px" }}>
         <Routes>

@@ -76,7 +76,7 @@ const styles = {
     display: "flex",
     gap: 40,
     padding: "14px 40px 22px",
-    fontSize: 15,
+    fontSize: "0.9375rem",
     letterSpacing: "0.02em",
   },
   tab: {

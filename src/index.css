@@ -7,6 +7,8 @@
 
 * { box-sizing: border-box; }
 
+html { font-size: clamp(14px, 1.1vw, 22px); }
+
 html, body, #root {
   margin: 0;
   padding: 0;

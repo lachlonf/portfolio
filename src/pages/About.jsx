@@ -50,7 +50,7 @@ export default function About() {
         <motion.section
           style={{
             ...styles.about,
-            gridTemplateColumns: isMobile ? "1fr" : "minmax(280px, 420px) 1fr",
+            gridTemplateColumns: isMobile ? "1fr" : "40vw 1fr",
             gap: isMobile ? 32 : 80,
           }}
           initial={{ opacity: 0, y: 4 }}
@@ -63,8 +63,8 @@ export default function About() {
           </div>
 
           {/* Copy — pointer events none so drawing passes through */}
-          <div style={{ ...styles.copy, fontSize: isMobile ? 17 : 19, position: "relative", zIndex: 20, pointerEvents: "none" }}>
-            <p style={{ ...styles.lede, fontSize: isMobile ? 20 : 24 }}>
+          <div style={{ ...styles.copy, fontSize: isMobile ? "1.0625rem" : "1.1875rem", position: "relative", zIndex: 20, pointerEvents: "none" }}>
+            <p style={{ ...styles.lede, fontSize: isMobile ? "1.25rem" : "1.5rem" }}>
               Designer and engineer building cool things and creative solutions.
             </p>
             <p>Based in Sydney, AU. Computer Science graduate from UNSW. I build websites and apps, mostly things I find genuinely interesting.</p>
@@ -137,7 +137,7 @@ const styles = {
   meta: {
     marginTop: 28,
     marginBottom: 36,
-    fontSize: 13,
+    fontSize: "0.8125rem",
     color: "var(--ink-soft)",
     display: "grid",
     gridTemplateColumns: "100px 1fr",
@@ -158,7 +158,7 @@ const styles = {
   },
   drawPrompt: {
     margin: 0,
-    fontSize: 13,
+    fontSize: "0.8125rem",
     letterSpacing: "0.15em",
     color: "var(--ink-soft)",
     userSelect: "none",
@@ -169,7 +169,7 @@ const styles = {
     gap: 16,
   },
   contactLink: {
-    fontSize: 15,
+    fontSize: "0.9375rem",
     color: "var(--ink)",
     textDecoration: "underline",
     textUnderlineOffset: 4,

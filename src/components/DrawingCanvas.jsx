@@ -109,11 +109,11 @@ export default function DrawingCanvas() {
     return () => canvas.removeEventListener("touchmove", handler);
   }, [drawMode]);
 
-  // Esc exits draw mode; Shift+Alt+C clears (admin only)
+  // Esc exits draw mode; Shift+D clears (admin only)
   useEffect(() => {
     const handler = (e) => {
       if (e.key === "Escape") setDrawMode(false);
-      if (e.shiftKey && e.altKey && e.key === "C") clearCanvas();
+      if (e.shiftKey && e.key === "D") clearCanvas();
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -277,7 +277,7 @@ export default function DrawingCanvas() {
             }}
           >
             <PencilIcon active={drawMode} />
-            <span style={{ fontSize: 13, fontWeight: 500, fontFamily: "inherit" }}>
+            <span style={{ fontSize: "0.8125rem", fontWeight: 500, fontFamily: "inherit" }}>
               {drawMode ? "Done" : "Draw"}
             </span>
           </button>
@@ -315,7 +315,7 @@ const styles = {
     border: "1px solid var(--rule)",
     borderRadius: 999,
     padding: "5px 10px",
-    fontSize: 12,
+    fontSize: "0.75rem",
     color: "var(--ink-soft)",
     userSelect: "none",
   },
@@ -368,7 +368,7 @@ const styles = {
     background: "none",
     border: "none",
     padding: "2px 6px",
-    fontSize: 12,
+    fontSize: "0.75rem",
     cursor: "pointer",
     fontFamily: "inherit",
   },
@@ -376,7 +376,7 @@ const styles = {
     border: "1px solid var(--rule)",
     borderRadius: 6,
     padding: "5px 10px",
-    fontSize: 12,
+    fontSize: "0.75rem",
     cursor: "pointer",
     fontFamily: "inherit",
     display: "flex",

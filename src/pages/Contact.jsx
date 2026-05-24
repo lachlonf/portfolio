@@ -34,8 +34,8 @@ export default function Contact() {
 }
 
 const styles = {
-  contact: { maxWidth: 720, fontSize: 19, lineHeight: 1.55 },
-  intro: { fontSize: 26, lineHeight: 1.35, margin: "0 0 48px", maxWidth: "24ch" },
+  contact: { maxWidth: 720, fontSize: "1.1875rem", lineHeight: 1.55 },
+  intro: { fontSize: "1.625rem", lineHeight: 1.35, margin: "0 0 48px", maxWidth: "24ch" },
   list: { listStyle: "none", padding: 0, margin: 0, borderTop: "1px solid var(--rule)" },
   item: {
     display: "grid",
@@ -45,7 +45,7 @@ const styles = {
     alignItems: "baseline",
     gap: 24,
   },
-  k: { fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-soft)" },
-  v: { fontSize: 18, color: "var(--ink)", transition: "color 120ms" },
-  arrow: { fontSize: 16, color: "var(--ink-soft)" },
+  k: { fontSize: "0.75rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-soft)" },
+  v: { fontSize: "1.125rem", color: "var(--ink)", transition: "color 120ms" },
+  arrow: { fontSize: "1rem", color: "var(--ink-soft)" },
 };
